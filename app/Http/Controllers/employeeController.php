@@ -41,7 +41,7 @@ class employeeController extends Controller
             'email' =>'required', 'string', 'email:rfc,dns', 'max:255', 'unique:employees', 
             'phone' =>'required', 'string', 'min:10', 'unique:employees', 
             'dob' =>'required', 
-            'image' =>'required', 
+            'image' =>'required,mimes:jpg,png', 
         ]);
         if( $validation->fails() )
         {
