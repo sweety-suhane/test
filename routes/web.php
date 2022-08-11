@@ -19,7 +19,7 @@ use App\Http\Controllers\employeeController;
 // });
 
 Route::get('/',[employeeController::class, 'employee'])->name('employee');
-Route::get('employeelist',[employeeController::class, 'employeelist']);
+Route::get('employeelist',[employeeController::class, 'employeelist'])->name('emp_list');
 Route::post('/employeedetail',[employeeController::class, 'employeelistDetail'])->name('list');
 Route::post('/',[employeeController::class, 'SaveEmpDetails'])->name('save_emp_details');
 Route::post('/employee',[employeeController::class, 'updateEmp'])->name('edit_emp');

@@ -4,8 +4,9 @@
     <div class="card card_1" >
         <div class="card-header">
            Employee Form
+           <a  href="{{route('emp_list')}}" style="margin-left: 676px;">List</a>
         </div>
-
+       
         <div class="card-body" style="height:100%;background:#fff;">
             <form action="" enctype="multipart/form-data" class="cls_form">
                 <div class="row form-group form_group2">
@@ -51,6 +52,7 @@
                 <label for="" class="file_label text-center">*All fields are mandetory</label>
                
                 <button type="button" class="btn btn-outline-success cls_form_submit">SUBMIT EMPLOYEE DETAILS</button>
+               
               
             </form>
             
